@@ -1,0 +1,6 @@
+# This file specifies to git sets of patterns of files to exclude from version control. 
+# Full documentation of the file format is available at: https://git-scm.com/docs/gitignore
+#
+# GitHub provides common templates for a variety of programming languages:
+# https://github.com/github/gitignore
+# We recommend starting with the example that corresponds to your project's language.
