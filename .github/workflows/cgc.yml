@@ -1,0 +1,29 @@
+name: "Deploy to CGC"
+on:
+  release:
+    types: [released, edited]
+jobs:
+  cgc:
+    runs-on: ubuntu-20.04
+    name: "Deploy"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set the docker tag from Repo Tag
+        id: set_dockertag
+        env:
+          IMAGE: cgc-images.sbgenomics.com/${{ github.repository }}
+          VERSION_TAG: ${{ github.event.release.tag_name }}
+          CWL_PATH: <CWL location in repository>
+        run: |
+          jq --arg image "${{ env.IMAGE }}:${{ env.VERSION_TAG }}" '(.requirements | .[] | select(.class == ("DockerRequirement")) | .dockerPull) |= $image' ${{ env.CWL_PATH }} > ${{ env.CWL_PATH }}.new
+          mv ${{ env.CWL_PATH }}.new ${{ env.CWL_PATH }}
+          cat ${{ env.CWL_PATH }}
+      - id: cgcdeploy
+        uses: jordan-rash/cgc-go@v0.1.4
+        with:
+          file_location: "${{ env.CWL_PATH }}"
+          shortid: "${{ github.repository }}/${{ github.event.repository.name }}"
+          devkey: ${{ secrets.CGC_TOKEN }}
+        env: 
+          CGC_TOKEN: ${{ secrets.CGC_TOKEN }}
+    
