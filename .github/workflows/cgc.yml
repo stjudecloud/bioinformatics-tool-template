@@ -19,7 +19,7 @@ jobs:
           mv ${{ env.CWL_PATH }}.new ${{ env.CWL_PATH }}
           cat ${{ env.CWL_PATH }}
       - id: cgcdeploy
-        uses: jordan-rash/cgc-go@v0.1.4
+        uses: stjudecloud/cgc-go@v0.1.4
         with:
           file_location: "${{ env.CWL_PATH }}"
           shortid: "${{ github.repository }}/${{ github.event.repository.name }}"
