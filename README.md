@@ -13,7 +13,7 @@
      <img alt="Github Issues"
           src="https://img.shields.io/github/issues/stjudecloud/bioinformatics-tool-template"  />
    </a>
-   <a href="https://github.com/stjude/stjudecloud/bioinformatics-tool-template"  target="_blank">
+   <a href="https://github.com/stjudecloud/bioinformatics-tool-template"  target="_blank">
      <img alt="Pull Requests"
           src="https://img.shields.io/github/issues-pr/stjudecloud/bioinformatics-tool-template"  />
    </a>
