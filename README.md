@@ -9,11 +9,11 @@
      <img alt="Status"
           src="https://img.shields.io/badge/status-active-success.svg" />
    </a>
-   <a href="https://github.com/stjudecloud/bioinformatics-tool-template" target="_blank">
+   <a href="https://github.com/stjudecloud/bioinformatics-tool-template/issues" target="_blank">
      <img alt="Github Issues"
           src="https://img.shields.io/github/issues/stjudecloud/bioinformatics-tool-template"  />
    </a>
-   <a href="https://github.com/stjudecloud/bioinformatics-tool-template"  target="_blank">
+   <a href="https://github.com/stjudecloud/bioinformatics-tool-template/pulls"  target="_blank">
      <img alt="Pull Requests"
           src="https://img.shields.io/github/issues-pr/stjudecloud/bioinformatics-tool-template"  />
    </a>
