@@ -17,7 +17,7 @@
      <img alt="Pull Requests"
           src="https://img.shields.io/github/issues-pr/stjudecloud/bioinformatics-tool-template"  />
    </a>
-   <a href="https://github.com/stjudecloud/bioinformatics-tool-template/blob/master/LICENSE.md" target="_blank">
+   <a href="https://github.com/stjudecloud/bioinformatics-tool-template/blob/main/LICENSE.md" target="_blank">
      <img alt="License: MIT"
           src="https://img.shields.io/badge/License-MIT-blue.svg" />
    </a>
